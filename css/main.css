@@ -83,3 +83,38 @@ header {
 
 /* Max-min code end */
 
+/* Wrapper code start */
+
+.wrapper__items {
+    margin-top: 180px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+.wrapper__item {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    
+}
+    
+
+#check-out {
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+#check-out h2 {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    color: white;
+}
+
+
+/* Wrapper code end */
+
