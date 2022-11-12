@@ -22,7 +22,7 @@ header {
     margin-top: 38px;
 }
 
-.header__btn {
+.header__link {
     margin-top: 24px;
     background-color: #13183f;
     padding: 14px 32px;
@@ -31,6 +31,15 @@ header {
     font-size: 18px;
     font-weight: 700;
     border: none;
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.header__link:hover,
+.header__link:focus,
+.header__link:active {
+    background-color: #666ca3;
 }
 
 /* Header code end */
@@ -63,7 +72,7 @@ header {
     margin-bottom: 40px;
 }
 
-.max-min__btn {
+.max-min__link {
     margin: 0;
     padding: 19px 32px;
     color: #FFFFFF;
@@ -73,12 +82,26 @@ header {
     background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
     border-radius: 32px;
     border: none;
+    cursor: pointer;
+}
+
+.max-min__link:hover,
+.max-min__link:focus,
+.max-min__link:active {
+    opacity: 50%;
 }
 
 .max-min__img {
     position: absolute;
     right: -25%;
     top: -40%;
+    /* background-image: url("../img/image-hero-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 435px 409px;
+    height: 386px;
+    width: 100%;
+    margin: auto; */
 }
 
 
@@ -152,6 +175,12 @@ header {
     font-size: 18px;
     color: #F74780;
     text-decoration: none;
+}
+
+.wrapper__item-link:hover,
+.wrapper__item-link:focus,
+.wrapper__item-link:active {
+    opacity: 50%;
 
 }
 
@@ -177,6 +206,13 @@ footer {
     background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
     border-radius: 32px;
     border: none;
+    z-index: 10;
+}
+
+.footer__btn:hover,
+.footer__btn:focus,
+.footer__btn:active {
+    opacity: 50%;
 }
 
 /* Footer code end */
