@@ -63,6 +63,7 @@ body {
     font-size: 56px;
     color: #13183F;
     line-height: 71px;
+    margin: 0;
 }
 
 .max-min__subtitle {
@@ -95,12 +96,11 @@ body {
 .max-min__img {
     background: url(../img/image-hero-desktop.png) no-repeat;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -20%;
+    right: -10%;
     width: 50%;
     height: 95vh;
-    background-position: 70px -90px;
-    background-size: auto 120%;
+    background-size: 110%;
 
 }
 
@@ -219,11 +219,11 @@ footer {
 
 /* Tablet code start */
 
-@media (max-width: 900px) {
+@media (max-width: 1025px) {
 
     .max-min {
         padding: 0 40px;
-        padding-bottom: 150px;
+        padding-bottom: 170px;
     }
     .header__link {
         font-weight: 700;
@@ -237,13 +237,16 @@ footer {
     }
 
     .max-min__wrapper {
-        width: 330px;
+        width: 398px;
     }
 
     .max-min__img {
         background: url(../img/image-hero-tablet.png) no-repeat;
-        top: -70px;
-        left: 400px;
+        top: -15%;
+        right: -5%;
+        width: 50%;
+        height: 70vh;
+        background-size: 150%;
     }
 
     .max-min__title {
@@ -272,9 +275,39 @@ footer {
 
 /* Mobile code start */
 
+@media (max-width: 420px) {
+
+    .max-min {
+        padding-bottom: 0;
+        display: block;
+    }
+
+    .max-min__wrapper {
+        margin: 38px 0;
+        width: 343px;
+    }
+
+    .wrapper__items {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 16px;
+        margin: 0;
+        padding-bottom: 40px;
+    }
+
+    .max-min__img {
+        background: url(../img/image-hero-mobile.png) no-repeat center;
+        top: 0;
+        right: 0;
+        width: 100%;
+        background-size: 150%;
+        position: relative;
+        width: 327px;
+        height: 400px;
+    }
 
 
 
+}
 
 /* Mobile code end */
 
