@@ -12,10 +12,9 @@ body {
 
 /* Header code start */
 
-header {
+.header {
     display: flex;
     justify-content: space-between;
-    padding: 0 165px;
 }
 
 .header__logo {
@@ -49,6 +48,8 @@ header {
 .max-min {
     position: relative;
     padding: 0 165px;
+    overflow: hidden;
+    padding-bottom: 40px;
 }
 
 .max-min__wrapper {
@@ -94,7 +95,7 @@ header {
 .max-min__img {
     position: absolute;
     right: -25%;
-    top: -40%;
+    top: -30%;
     /* background-image: url("../img/image-hero-desktop.png");
     background-repeat: no-repeat;
     background-position: center;
